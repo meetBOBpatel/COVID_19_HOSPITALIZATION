@@ -38,7 +38,7 @@ public class UserDao {
 			
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 			Connection connect = DriverManager
-					.getConnection("jdbc:mysql://localhost:3306/bookstore", "root","M@nUtd_is_<3#ggmu"); //semicolon daldiya mein abhi run kar
+					.getConnection("jdbc:mysql://localhost:3306/covid_19_hospitalization", "root","M@nUtd_is_<3#ggmu"); //FOR LOGIN/REGISTER to work in Covid_19_hospitalization 
 		    String sql = "select * from tb_user where username=?";
 		    PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setString(1,username);
@@ -75,7 +75,7 @@ public class UserDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 			Connection connect = DriverManager
-					.getConnection("jdbc:mysql://localhost:3306/bookstore", "root","M@nUtd_is_<3#ggmu");
+					.getConnection("jdbc:mysql://localhost:3306/covid_19_hospitalization", "root","M@nUtd_is_<3#ggmu");
 
 			
 			String sql = "insert into tb_user values(?,?,?)";
@@ -95,7 +95,7 @@ public class UserDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 			Connection connect = DriverManager
-					.getConnection("jdbc:mysql://localhost:3306/bookstore", "root","M@nUtd_is_<3#ggmu");
+					.getConnection("jdbc:mysql://localhost:3306/covid_19_hospitalization", "root","M@nUtd_is_<3#ggmu");
 			
 			
 			String sql = "select * from tb_user";
