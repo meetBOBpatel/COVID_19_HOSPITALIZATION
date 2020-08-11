@@ -17,6 +17,25 @@
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
+	<style>
+	body{
+		background: coral;		
+	}
+	a:link {
+  		color: green;
+  		background-color: transparent;
+  		text-decoration: none;
+  		text-align: center;
+	}
+	a:hover {
+  		color: yellow;
+  		background-color: transparent;
+  		text-decoration: none;
+	}
+	h1{
+		text-align: center;
+	}
+</style>
 
   </head>
   
@@ -33,3 +52,4 @@
 </form>
   </body>
 </html>
+

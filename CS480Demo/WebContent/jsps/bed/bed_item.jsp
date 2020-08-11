@@ -5,8 +5,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+    <base href="">
     
-    <title>Initialize Database</title>
+    <title>Beds</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -17,17 +18,32 @@
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-
+<style>
+	body{
+		background: coral;		
+	}
+	a:link {
+  		color: green;
+  		background-color: transparent;
+  		text-decoration: none;
+  		text-align: center;
+	}
+	a:hover {
+  		color: yellow;
+  		background-color: transparent;
+  		text-decoration: none;
+	}
+	h1{
+		text-align: center;
+	}
+</style>
   </head>
   
   <body>
-  <h1>Initialize Database</h1>
-
-
-<p style="color: red; font-weight: 900"> ${msg}</p>
-<form action="<c:url value='/InitServlet'/>" method="post">
-
-	<input type="submit" value="Initialize Database"/>
-</form>
+    <h1>Welcome to the Beds Information</h1>
+    <br>
+    <a href="<c:url value='/findAllBeds'/>" target="body">Click to visit Bed's Table</a>&nbsp;&nbsp;
+ 
+    
   </body>
 </html>

@@ -18,6 +18,19 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
 
+<style>
+		form{
+			text-align: center;
+			font-size: 19px;
+		}
+		h1{
+			font-size: 30px;
+			text-align: center;
+		}
+		body{
+			background: coral;
+		}
+	</style>
   </head>
   
   <body>
@@ -25,7 +38,7 @@
   <%--
   1. 显示errors --> 字段错误
   2. 显示异常错误
-  3. 回显
+  3. 回显8
    --%>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/UserServletRegister'/>" method="post">

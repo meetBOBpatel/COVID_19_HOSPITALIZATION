@@ -3,9 +3,6 @@
 	<name>CS480Demo</name>
 	<comment></comment>
 	<projects>
-		<project>servlet-api</project>
-		<project>jstl-1.2</project>
-		<project>mysql-connector-java-5.1.25-bin</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

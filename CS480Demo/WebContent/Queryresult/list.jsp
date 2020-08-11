@@ -5,18 +5,25 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<style>
+	body{
+	
+		background: coral;		
+	}
+</style>
 </head>
 <body>
 	<h3 align="center"> User Table </h3>
 	<table border="1" width="70%" align="center">
 	<tr>
 		<th>name</th>
+		<th>password</th>
 		<th>email</th>
 	</tr>
 <c:forEach items="${UserList}" var="user">
 	<tr>
 		<td>${user.username }</td>
+		<td>${user.password } </td>
 		<td>${user.email }</td>
 	</tr>
 </c:forEach>

@@ -18,31 +18,58 @@
 	-->
 <style type="text/css">
 	body {
-		background: #4682B4; 
+		/* background: #4682B4; */
+		background: #333; 
 	}
-	a {
-		text-transform:none;
-		text-decoration:none;
-	} 
-	a:hover {
-		text-decoration:underline;
+ 	.topnav a {
+	  float: left;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	  border-radius: 25px;
 	}
+
+	.topnav a:hover {
+	  background-color: black;
+	  color: yellow;
+	}
+	.topnav {
+	  overflow: hidden;
+	  background-color: red;
+	  border: 2px solid pink;
+	  padding: 2px;
+	  border-radius: 25px;
+	}
+
+	
 </style>
   </head>
   
   <body>
-<h1 style="text-align: center;">CSC4710</h1>
+<h1 style="text-align: center; color: white">CSC480</h1>
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
-			<a href="<c:url value='/jsps/user/login.jsp'/>" target="_parent">Login</a> |&nbsp; 
-			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a> |&nbsp; 
-			<a href="<c:url value='/jsps/user/InitDB.jsp'/>" target="_parent">Initialize Database</a>		
+		<nav class = "topnav">
+			<a href="<c:url value='/jsps/user/login.jsp'/>" target="_parent">Login</a>
+			<a href="<c:url value='/jsps/user/regist.jsp'/>" target="_parent">Register</a>
+			<a href="<c:url value='/jsps/user/initialize.jsp'/>" target="_parent">Initialize Database</a> 
+		    
+		</nav>
+			
 		</c:when>
 		<c:otherwise>
 			Hello：${sessionScope.session_user.username };
-			<a href="<c:url value='/jsps/item.jsp'/>" target="body">Query Result</a>&nbsp;&nbsp;
-		</c:otherwise>
+		<nav class = "topnav">
+			<a href="<c:url value='/jsps/item.jsp'/>" target="body">User Info</a>
+			<a href="<c:url value='/jsps/location/location_item.jsp'/>" target="body">Location</a> 
+			<a href="<c:url value='/jsps/hospital/hospital_item.jsp'/>" target="body">Hospital</a> 
+			<a href="<c:url value='/jsps/bed/bed_item.jsp'/>" target="body">Bed</a>
+			<a href="<c:url value='/jsps/queries/allButtons.jsp'/>" target="body">All Queries</a>
+		</nav>
+			</c:otherwise>
 	</c:choose>
 
 </div>

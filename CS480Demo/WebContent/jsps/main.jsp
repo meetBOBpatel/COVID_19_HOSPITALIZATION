@@ -9,20 +9,25 @@
     <title>main</title>
     
 	<meta http-equiv="pragma" content="no-cache">
+
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
-	<!--
+	
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
+	
 	<style type="text/css">
 		*{
 			font-size:10pt;
 		}
 		body{
 			text-align:center;
+			/* background-color: coral; */
+			 background-image: url("https://cloudfront-us-east-1.images.arcpublishing.com/gmg/WXSOBLS7GZBUBMLWA7Z5ZR7BT4.jpg");  
+			 background-size: auto;
+			 
 		}
 		.table{
 			width:1024px;

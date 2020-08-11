@@ -18,11 +18,29 @@
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-
+<style>
+	body{
+		background: coral;		
+	}
+	a:link {
+  		color: green;
+  		background-color: transparent;
+  		text-decoration: none;
+  		text-align: center;
+	}
+	a:hover {
+  		color: yellow;
+  		background-color: transparent;
+  		text-decoration: none;
+	}
+	h1{
+		text-align: center;
+	}
+</style>
   </head>
   
   <body>
-    <h1>Welcome to the Demo</h1>
+    <h1>Welcome to User Table</h1>
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
  

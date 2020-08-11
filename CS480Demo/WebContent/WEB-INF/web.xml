@@ -2,26 +2,197 @@
 
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>CSC4710 Demo</display-name>
+  
   <servlet>
     <description></description>
-    <display-name>InitServlet</display-name>
-    <servlet-name>InitServlet</servlet-name>
-    <servlet-class>user.web.servlet.InitServlet</servlet-class>
+    <display-name>deleteLocation</display-name>
+    <servlet-name>deleteLocation</servlet-name>
+    <servlet-class>location.web.servlet.deleteLocation</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>InitServlet</servlet-name>
-    <url-pattern>/InitServlet</url-pattern>
+    <servlet-name>deleteLocation</servlet-name>
+    <url-pattern>/deleteLocation</url-pattern>
   </servlet-mapping>
+
   <servlet>
     <description></description>
-    <display-name>UserServletRegister</display-name>
-    <servlet-name>UserServletRegister</servlet-name>
-    <servlet-class>user.web.servlet.UserServletRegister</servlet-class>
+    <display-name>findAllLocations</display-name>
+    <servlet-name>findAllLocations</servlet-name>
+    <servlet-class>location.web.servlet.findAllLocations</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>UserServletRegister</servlet-name>
-    <url-pattern>/UserServletRegister</url-pattern>
+    <servlet-name>findAllLocations</servlet-name>
+    <url-pattern>/findAllLocations</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>queries</display-name>
+    <servlet-name>queries</servlet-name>
+    <servlet-class>query.web.servlet.queries</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>queries</servlet-name>
+    <url-pattern>/queries</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>showEditFormLocation</display-name>
+    <servlet-name>showEditFormLocation</servlet-name>
+    <servlet-class>location.web.servlet.showEditFormLocation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showEditFormLocation</servlet-name>
+    <url-pattern>/showEditFormLocation</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <description></description>
+    <display-name>updateLocation</display-name>
+    <servlet-name>updateLocation</servlet-name>
+    <servlet-class>location.web.servlet.updateLocation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateLocation</servlet-name>
+    <url-pattern>/updateLocation</url-pattern>
+  </servlet-mapping>
+
+
+   <servlet>
+    <description></description>
+    <display-name>UserServletLocation</display-name>
+    <servlet-name>UserServletLocation</servlet-name>
+    <servlet-class>location.web.servlet.UserServletLocation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletLocation</servlet-name>
+    <url-pattern>/UserServletLocation</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>deleteBed</display-name>
+    <servlet-name>deleteBed</servlet-name>
+    <servlet-class>bed.web.servlet.deleteBed</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteBed</servlet-name>
+    <url-pattern>/deleteBed</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>findAllBeds</display-name>
+    <servlet-name>findAllBeds</servlet-name>
+    <servlet-class>bed.web.servlet.findAllBeds</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findAllBeds</servlet-name>
+    <url-pattern>/findAllBeds</url-pattern>
+  </servlet-mapping>
+ 
+  
+  <servlet>
+    <description></description>
+    <display-name>showEditFormBed</display-name>
+    <servlet-name>showEditFormBed</servlet-name>
+    <servlet-class>bed.web.servlet.showEditFormBed</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showEditFormBed</servlet-name>
+    <url-pattern>/showEditFormBed</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet>
+    <description></description>
+    <display-name>updateBed</display-name>
+    <servlet-name>updateBed</servlet-name>
+    <servlet-class>bed.web.servlet.updateBed</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateBed</servlet-name>
+    <url-pattern>/updateBed</url-pattern>
+  </servlet-mapping>
+
+  
+   <servlet>
+    <description></description>
+    <display-name>UserServletBed</display-name>
+    <servlet-name>UserServletBed</servlet-name>
+    <servlet-class>bed.web.servlet.UserServletBed</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletBed</servlet-name>
+    <url-pattern>/UserServletBed</url-pattern>
+  </servlet-mapping>
+ 
+ 
+  <servlet>
+    <description></description>
+    <display-name>deleteHospital</display-name>
+    <servlet-name>deleteHospital</servlet-name>
+    <servlet-class>hospital.web.servlet.deleteHospital</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteHospital</servlet-name>
+    <url-pattern>/deleteHospital</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>findAllHospitals</display-name>
+    <servlet-name>findAllHospitals</servlet-name>
+    <servlet-class>hospital.web.servlet.findAllHospitals</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findAllHospitals</servlet-name>
+    <url-pattern>/findAllHospitals</url-pattern>
+  </servlet-mapping>
+ 
+  
+  <servlet>
+    <description></description>
+    <display-name>showEditForm</display-name>
+    <servlet-name>showEditForm</servlet-name>
+    <servlet-class>hospital.web.servlet.showEditForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>showEditForm</servlet-name>
+    <url-pattern>/showEditForm</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet>
+    <description></description>
+    <display-name>updateHospital</display-name>
+    <servlet-name>updateHospital</servlet-name>
+    <servlet-class>hospital.web.servlet.updateHospital</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateHospital</servlet-name>
+    <url-pattern>/updateHospital</url-pattern>
+  </servlet-mapping>
+
+  
+   <servlet>
+    <description></description>
+    <display-name>UserServletHospital</display-name>
+    <servlet-name>UserServletHospital</servlet-name>
+    <servlet-class>hospital.web.servlet.UserServletHospital</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletHospital</servlet-name>
+    <url-pattern>/UserServletHospital</url-pattern>
+  </servlet-mapping>
+  
+  
   <servlet>
     <description></description>
     <display-name>UserServletLogin</display-name>
@@ -32,6 +203,20 @@
     <servlet-name>UserServletLogin</servlet-name>
     <url-pattern>/UserServletLogin</url-pattern>
   </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>UserServletRegister</display-name>
+    <servlet-name>UserServletRegister</servlet-name>
+    <servlet-class>user.web.servlet.UserServletRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServletRegister</servlet-name>
+    <url-pattern>/UserServletRegister</url-pattern>
+  </servlet-mapping>
+
+
   <servlet>
     <description></description>
     <display-name>findAll</display-name>
@@ -42,6 +227,20 @@
     <servlet-name>findAll</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
+
+
+  <servlet>
+    <description></description>
+    <display-name>InitServlet</display-name>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>user.web.servlet.InitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/InitServlet</url-pattern>
+  </servlet-mapping>
+  
+
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>

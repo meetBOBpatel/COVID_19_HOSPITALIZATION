@@ -14,8 +14,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import user.dao.InitializeDao;
 import user.dao.UserDao;
+import user.dao.initalizeDao;
 import user.domain.User;
 import user.service.UserException;
 import user.service.UserService;
@@ -47,8 +47,10 @@ public class InitServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		InitializeDao newObj = new InitializeDao();
-		newObj.initDB();
+		initalizeDao newObj = new initalizeDao();
+        newObj.initDB();
+        
+        response.sendRedirect( request.getContextPath() + "/jsps/main.jsp");
 		
 	}
 

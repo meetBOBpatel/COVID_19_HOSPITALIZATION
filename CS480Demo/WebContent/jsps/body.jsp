@@ -18,6 +18,12 @@
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
+<style>
+	body{
+	
+		background: coral;		
+	}
+</style>
 
   </head>
   

@@ -38,7 +38,9 @@ public class UserDao {
 			
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 			Connection connect = DriverManager
-					.getConnection("jdbc:mysql://localhost:3306/covid_19_hospitalization", "root","M@nUtd_is_<3#ggmu"); //FOR LOGIN/REGISTER to work in Covid_19_hospitalization 
+					.getConnection("jdbc:mysql://localhost:3306/COVID_19_HOSPITALIZATION?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC" , "root" ,"yeshmeet123");
+
+			
 		    String sql = "select * from tb_user where username=?";
 		    PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setString(1,username);
@@ -75,8 +77,9 @@ public class UserDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 			Connection connect = DriverManager
-					.getConnection("jdbc:mysql://localhost:3306/covid_19_hospitalization", "root","M@nUtd_is_<3#ggmu");
-
+			          .getConnection("jdbc:mysql://localhost:3306/COVID_19_HOSPITALIZATION?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC" , "root" ,"yeshmeet123");
+					
+			//		.getConnection("jdbc:mysql://localhost:3306/bookstore?" , "root" , "password");
 			
 			String sql = "insert into tb_user values(?,?,?)";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
@@ -95,8 +98,8 @@ public class UserDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 			Connection connect = DriverManager
-					.getConnection("jdbc:mysql://localhost:3306/covid_19_hospitalization", "root","M@nUtd_is_<3#ggmu");
-			
+			          .getConnection("jdbc:mysql://localhost:3306/COVID_19_HOSPITALIZATION?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC" , "root" ,"yeshmeet123");
+
 			
 			String sql = "select * from tb_user";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 

@@ -51,15 +51,19 @@ public class UserServletRegister extends HttpServlet {
 		User form = new User();
 		List<String> info = new ArrayList<String>();
 		
+		System.out.println("before the for loop");
+		
 		for(String name : paramMap.keySet()) {
 			
 			String[] values = paramMap.get(name);
 			info.add(values[0]);
 			System.out.println(name + ": " + Arrays.toString(values));
 		}
+	
 		form.setUsername(info.get(1));
 		form.setPassword(info.get(2));
 		form.setEmail(info.get(3));
+		
 		
 		try {
 			userservice.regist(form);
